@@ -14,9 +14,7 @@ CREATE TABLE movies (
   title TEXT,
   release_year TEXT,
   rating TEXT,
-  studio TEXT,
-  director TEXT,
-  producer TEXT
+  studio TEXT
 );
 
 CREATE TABLE actor (
@@ -25,7 +23,6 @@ CREATE TABLE actor (
   last_name TEXT,
   movie_role TEXT,
   title TEXT,
-  movies INTEGER
 );
 
 CREATE TABLE studio (
@@ -35,3 +32,104 @@ CREATE TABLE studio (
   release_year TEXT
 );
  
+ --Add movie data 
+
+INSERT INTO movies (
+  title,
+  release_year,
+  rating,
+  studio
+)
+
+  VALUES (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "Warner Bros"
+  );
+
+INSERT INTO movies (
+  title,
+  release_year,
+  rating,
+  studio
+)
+  VALUES (
+    "The Dark Knight",
+    "2008",
+    "PG-13",
+    "Warner Bros"
+  );
+
+INSERT INTO movies (
+  title,
+  release_year,
+  rating,
+  studio
+)
+  VALUES (
+    "The Dark Knight Rises",
+    "2012",
+    "PG-13",
+    "Warner Bros"
+  );
+
+ --Add actor data 
+
+INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+  VALUES (
+    "Christian",
+    "Bale",
+    "Bruce Wayne",
+    "Batman Begins"
+  );
+INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+  VALUES (
+    "Christian",
+    "Bale",
+    "Bruce Wayne",
+    "The Dark Knight"
+  );
+  INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+  VALUES (
+    "Christian",
+    "Bale",
+    "Bruce Wayne",
+    "The Dark Knight Rises"
+  );
+SELECT * FROM actor 
+
+
+
+
+-- Batman Begins          Christian Bale        Bruce Wayne
+-- Batman Begins          Michael Caine         Alfred
+-- Batman Begins          Liam Neeson           Ra's Al Ghul
+-- Batman Begins          Katie Holmes          Rachel Dawes
+-- Batman Begins          Gary Oldman           Commissioner Gordon
+-- The Dark Knight        Christian Bale        Bruce Wayne
+-- The Dark Knight        Heath Ledger          Joker
+-- The Dark Knight        Aaron Eckhart         Harvey Dent
+-- The Dark Knight        Michael Caine         Alfred
+-- The Dark Knight        Maggie Gyllenhaal     Rachel Dawes
+-- The Dark Knight Rises  Christian Bale        Bruce Wayne
+-- The Dark Knight Rises  Gary Oldman           Commissioner Gordon
+-- The Dark Knight Rises  Tom Hardy             Bane
+-- The Dark Knight Rises  Joseph Gordon-Levitt  John Blake
+-- The Dark Knight Rises  Anne Hathaway         Selina Kyle
+
