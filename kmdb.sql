@@ -1,4 +1,4 @@
--- Drop previously existing tables and create new table for the KMD 
+-- Drop previously existing tables and create new table for the KMDB
 
 DROP TABLE IF EXISTS title;
 DROP TABLE IF EXISTS actor;
@@ -34,34 +34,4 @@ CREATE TABLE studio (
   title TEXT,
   release_year TEXT
 );
-  
-  INSERT INTO movies (
-  title,
-  release_year,
-  rating,
-  studio
-  )
-
-  VALUES (
-    "Batman Begins",
-    "2005",
-    "PG-13",
-    "Warner Bros"
-
-  );
-
-
-
--- Batman Begins          2005           PG-13  Warner Bros.
--- The Dark Knight        2008           PG-13  Warner Bros.
--- The Dark Knight Rises  2012           PG-13  Warner Bros.
-
---VALUES 
---  "Jane",
- -- "Doe",
- -- #"jane@example.com"
---);
-
---We can then SELECT * FROM students; to see if it worked:
-
-SELECT * FROM Movies
+ 
