@@ -76,7 +76,7 @@ INSERT INTO movies (
     "Warner Bros"
   );
 
- --Add actor data 
+ --Add actor data for Christian Bale
 
 INSERT INTO actor (
   first_name,
@@ -96,7 +96,7 @@ INSERT INTO actor (
   movie_role,
   title
 )
-  VALUES (
+VALUES (
     "Christian",
     "Bale",
     "Bruce Wayne",
@@ -108,10 +108,176 @@ INSERT INTO actor (
   movie_role,
   title
 )
-  VALUES (
+VALUES (
     "Christian",
     "Bale",
     "Bruce Wayne",
+    "The Dark Knight Rises"
+  );
+
+--Add actor data for Michael Caine
+
+INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Michael",
+    "Caine",
+    "Alfred",
+    "Batman Begins"
+  );
+INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+   "Michael",
+    "Caine",
+    "Alfred",
+    "The Dark Knight"
+  );
+
+--Actor data for Liam 
+
+INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Liam",
+    "Neeson",
+    "Ra's Al Ghul",
+    "Batman Begins"
+  );
+
+--Add actor data for Katie
+
+INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Katie",
+    "Holmes",
+    "Rachel Dawes",
+    "Batman Begins"
+  );
+
+--GAry Oldman
+
+INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Gary",
+    "Oldman",
+    "Commissioner Gordon",
+    "Batman Begins"
+  );
+INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Gary",
+    "Oldman",
+    "Commissioner Gordon",
+    "The Dark Knight Rises"
+  );
+-- DK actors
+
+    INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Heath",
+    "Ledger",
+    "Joker",
+    "The Dark Knight"
+  );
+
+
+    INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Aaron",
+    "Eckhardt",
+    "Harvey Dent",
+    "The Dark Knight"
+  );
+
+    INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Maggie",
+    "Gyllenhal",
+    "Rachel Dawes",
+    "The Dark Knight"
+  );
+  
+-- DKR actors
+
+  INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Tom",
+    "Hardy",
+    "Bane",
+    "The Dark Knight Rises"
+  );
+
+  INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Joseph",
+    "Gordon-Levitt",
+    "John Blake",
+    "The Dark Knight Rises"
+  );
+
+    INSERT INTO actor (
+  first_name,
+  last_name,
+  movie_role,
+  title
+)
+VALUES (
+    "Anne",
+    "Hathaway",
+    "Selina Kyle",
     "The Dark Knight Rises"
   );
 
