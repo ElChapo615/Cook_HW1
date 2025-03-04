@@ -32,11 +32,6 @@ CREATE TABLE studio (
   title TEXT,
   release_year TEXT
 );
- 
- CREATE TABLE movie_listings
- id INTEGER PRIMARY KEY AUTOINCREMENT,
-  title TEXT,
-  studio_id INTEGER,
 
 
  --Add movie data 
@@ -107,7 +102,7 @@ INSERT INTO actor (
     "Bruce Wayne",
     "The Dark Knight"
   );
-  INSERT INTO actor (
+INSERT INTO actor (
   first_name,
   last_name,
   movie_role,
@@ -119,6 +114,7 @@ INSERT INTO actor (
     "Bruce Wayne",
     "The Dark Knight Rises"
   );
+
 SELECT * FROM actor
 
 
