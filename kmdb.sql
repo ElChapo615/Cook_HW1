@@ -15,6 +15,7 @@ CREATE TABLE movies (
   release_year TEXT,
   rating TEXT,
   studio TEXT
+  actor_id INTEGER
 );
 
 CREATE TABLE actor (
@@ -22,7 +23,7 @@ CREATE TABLE actor (
   first_name TEXT,
   last_name TEXT,
   movie_role TEXT,
-  title TEXT,
+  title TEXT
 );
 
 CREATE TABLE studio (
@@ -32,6 +33,12 @@ CREATE TABLE studio (
   release_year TEXT
 );
  
+ CREATE TABLE movie_listings
+ id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT,
+  studio_id INTEGER,
+
+
  --Add movie data 
 
 INSERT INTO movies (
@@ -112,7 +119,7 @@ INSERT INTO actor (
     "Bruce Wayne",
     "The Dark Knight Rises"
   );
-SELECT * FROM actor 
+SELECT * FROM actor
 
 
 
