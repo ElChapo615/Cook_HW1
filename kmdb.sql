@@ -24,23 +24,14 @@ CREATE TABLE actor (
   last_name TEXT,
   movie_role TEXT,
   title TEXT
-  movie_id INTEGER
 );
 
 CREATE TABLE studio (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  movies INTEGER,
-  title TEXT
+  title TEXT,
+  release_year TEXT
 );
 
- CREATE TABLE movie_cast (
- id INTEGER PRIMARY KEY AUTOINCREMENT,
-  title TEXT,
-  movie_id INTEGER,
-  actor_id INTEGER
- );
-
--- Manual/hard code version
  --Add movie data 
 
 INSERT INTO movies (
@@ -48,7 +39,7 @@ INSERT INTO movies (
   release_year,
   rating,
   studio
-)
+  );
 
   VALUES (
     "Batman Begins",
@@ -289,7 +280,7 @@ VALUES (
   );
 
 .mode column
-.headers off
+.headers on
 
 --CREATE TABLE movie_cast (
  --id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -304,14 +295,14 @@ VALUES (
 
 -- The SQL statement for the movies output
 
---SELECT title, release_year, studio FROM movies;
+SELECT * FROM movies;
 
 --.print ""
 --.print ""
 
 -- The SQL statement for the cast output
 
-SELECT actor.title, actor.first_name, actor.last_name, actor.movie_role FROM actor INNER JOIN movies ON movies.title = actor.title;
+--SELECT actor.title, actor.first_name, actor.last_name, actor.movie_role FROM actor INNER JOIN movies ON movies.title = actor.title;
 --SELECT actor.title, actor.first_name, actor.last_name, actor.movie_role FROM actor INNER JOIN movie_cast ON movie_cast.actor_id = actor.actor_id;
 --SELECT title, first_name, last_name, movie_role FROM actor
 --ORDER BY title;
